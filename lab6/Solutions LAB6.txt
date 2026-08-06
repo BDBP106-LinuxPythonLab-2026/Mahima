@@ -1,0 +1,31 @@
+Solutions@LAB6
+answer2: This command searches for lines containing PS1, which defines the appearance of the command line prompt.
+	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ 
+	'${debian_chroot:+($debian_chroot)}: Displays the name of the current Debian chroot environment if you are inside one.
+	\[\033[01;32m\]: Switches the text color to bold green.
+	\u@\h: Prints the current username (\u) followed by @ and the hostname (\h).
+	\[\033[00m\]: Resets the text color back to default.
+	:: Prints a literal colon separator.
+	\[\033[01;34m\]: Switches the text color to bold blue.
+	\w: Prints the current working directory path.
+	\[\033[00m\]\$ ': Resets the text color and prints a $ sign (or # for root) followed by a space.
+	PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ 
+	'This is a simplified, non-colored version of the prompt breakdown above.
+	PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"\[\e]0; ... \a\]:
+	An escape sequence that dynamically sets the terminal window title bar to show username@hostname: directory.
+	$PS1: Appends the previously defined prompt format to the end of this sequence.
+
+
+answer3: This command searches for lines containing HIST, which configures how terminal command history is saved.
+	HISTCONTROL=ignorebothCombines two instructions for saving command history:
+	ignorespace: Do not save commands that start with a space.
+	ignoredups: Do not save a command if it matches the previous command exactly.
+	# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)A comment line explaining where to find official manual documentation.
+	HISTSIZE=1000Sets the maximum number of commands to temporarily keep in the active terminal memory during a session to 1,000.
+	HISTFILESIZE=2000Sets the maximum number of total lines stored permanently inside the history file (.bash_history) to 2,000.
+
+answer4: The 'whereis' command shows us the path of binary, source and manual files of the given command.
+	The 'which' command however only shows us the path of the source file of the given command.
+
+
+answer9: The entry in the '0' represents the current directory which also the last directory which was added to the stack.
