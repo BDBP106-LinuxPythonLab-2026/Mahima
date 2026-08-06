@@ -1,0 +1,22 @@
+SOLUTIONS:
+Q2
+(i)The permissions for user are read and write;read and write for group and read only for everyone else.
+
+(ii)The output for chmod command was 0002. The first 0 is the sticky bit and the next three digits tell us about the default permission for files and directories.
+To get the default permissions for directories you need to subtract the value(002) from maximum possible permission(777) = 775 [user(list files,create/delete/modify files,enter directory and access files);group(list files,create/delete/modify files,enter directory and access files);others(list files,enter directory and access files)]
+To get the default permissions for files you need to subtract the value(002) from maximum possible permission(666) = 664 [user(read,write);group(read,write);others(read)].
+
+(iii)664 [user(read,write);group(read,write);others(read)]
+
+(iv)775 [user(list files,create/delete/modify files,enter directory and access files);group(list files,create/delete/modify files,enter directory and access files);others(list files,enter directory and access files)]
+
+(v)664 [user(read,write);group(read,write);others(read)]
+Yes,it is the same as the file outside. The copying action copies the file with the same permissions.
+
+(vi)The octal value for the directory is 664.
+(PERMISSION DENIED FOR ENTERING THE DIRECTORY.
+CHANGED THE VALUE TO 764.)
+The permissions for the file inside remains unchanged, the permissions are not inherited.
+
+(vii)No,the moving action does not change the file permisssions.
+
