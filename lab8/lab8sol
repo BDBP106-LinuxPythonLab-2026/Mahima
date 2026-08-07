@@ -1,0 +1,14 @@
+   Q11- 
+   :70>enter>i>This is an important reminder for you.>esc>:s/important/critical>enter
+   Q12-
+   shift+g>:70>enter
+   Q13-
+   shift+g>enter>i>The quick brown fox (who was very quick) jumps over the lazy dog.>esc>h(45times)>21x
+   Q15-
+   (i):1,3s/   / /g>jj>hh>2x
+   (ii):5>enter>rT>l(28times)>i>e>esc>j>hhhh>x>j>h(14times)>rI>j>rP>l(14times)>rb>(12times)l>i>l>esc
+   (iii):10>enter>l(11times)>i>!>esc>$>i>.>esc>j>i>?>esc>j>i>.>esc>j>l(9times)>2x>h(13times)>3x>hhhh>x>hhhh>x>h(8times)>3x
+   (iv):15>enter>ll>dw>lllll>dw>dw>j>l(16times)>dw>j>(23times)h>dw
+   (v):19>enter>(9times)l>hh>i>  >k>lllll>i>     >esc>j>h>i> >esc
+
+
